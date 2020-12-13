@@ -1,3 +1,7 @@
+# Project
+
+Following along The Odin Project's React tutorial, 'State and Props' chapter: https://www.theodinproject.com/courses/javascript/lessons/state-and-props
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
