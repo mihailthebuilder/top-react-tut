@@ -1,21 +1,32 @@
 import React, {Component} from "react";
-import MyComponent from "./components/MyComponent.js";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.onClickBtn = this.onClickBtn.bind(this);
+  constructor() {
+    super();
+    
+    this.state = {
+      count: 0,
+    };
+
+    this.countUp = this.countUp.bind(this);
   }
 
-  onClickBtn() {
-    alert("Button has been clicked!");
+  countUp() {
+    this.setState({
+      count: this.state.count + 1,
+    })
   }
 
   render() {
     
     return (
       <div>
-        <MyComponent title="React" onButtonClicked={this.onClickBtn}/>
+        <button onClick={this.countUp}>
+          Click Me!
+        </button>
+        <p>
+          {this.state.count}
+        </p>
       </div>
     )
   }
